@@ -29,5 +29,5 @@ sorbenome = 'jolie'
 import pdb; pdb.set_trace()
 nome_completo = nome + ' ' + sorbenome
 curso = 'Programação em Python Essencial'
-final = nome_completo = ' faz o curso ' + curso
+final = nome_completo + ' faz o curso ' + curso
 print(final)
