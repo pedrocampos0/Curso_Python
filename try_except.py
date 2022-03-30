@@ -1,8 +1,8 @@
 """
-O bloco try/except
+O block try/except
 
-Utilizamos o bloco try/except para tratar erros que podem ocorrer no nosso código. Preinindo assim que o programa pare
-de funcioanr e o usuário receba mensagens de erro inesperadas.
+Utilizamos o bloco try/except para tratar erros que podem ocorrer no nosso código. Previnindo
+assim que o programa pare de funcionar e o usuário receba mensagens de erro inesperadas.
 
 A forma geral mais simples é:
 
@@ -11,68 +11,74 @@ try:
 except:
     //o que deve ser feito em caso de problema
 
-# Exemplo 1 - Tratando erro genérico
+
+# Exemplo 1 - Tratando um erro genérico
+
 try:
     geek()
 except:
     print('Deu algum problema')
 
-# Tente executar a função geek, caso você encontre erros. imprima a mensagem de erro.
+# Tente executar a função geek(), caso você encontre erros, imprima a mensagem de erro.
 
-# Exemplo 2 - Tratando erro genérico
+
+# Exemplo 2 - Tratando um erro genérico
+
 try:
     len(5)
 except:
     print('Deu algum problema')
 
-# Tente executar a função len(5), caso você encontre erros. imprima a mensagem de erro.
+# Tente executar a função geek(), caso você encontre erros, imprima a mensagem de erro.
 
-# Exemplo 4 - tratando um erro específico
+OBS: Tratar erro de forma genérica não é a melhor forma de tratamento de erros. O ideal é SEMPRE
+tratar de forma específica.
+
+# Exemplo 3 - Tratando um erro específico
 
 try:
     geek()
 except NameError:
     print('Você está utilizando uma função inexistente')
 
-# Exemplo 5 - tratando um erro específico
+
+# Exemplo 4 - Tratando um erro específico
+
+try:
+    len(5)
+except TypeError:
+    print('Você está utilizando uma função inexistente')
+
+# Exemplo 5 - Tratando um erro específico com detalhes do erro
 
 try:
     len(5)
 except TypeError as err:
-    print(f'Você está utilizando uma função inexistente, logo gerou o seguinte erro {err}')
+    print(f'A aplicação gerou o seguinte erro: {err}')
 
-# Exemplo 6
+# Podemos efetuar diversos tratamentos de erros de uma vez.
 
 try:
-    # len(5)
-    # geek()
-    print('Geek'[9])
-except NameError as err:
-    print(f'Deu NameError: {err}')
-except TypeError as err1:
-    print(f'Deu TypeError: {err1}')
+    geek()
+except NameError as erra:
+    print(f'Deu NameError: {erra}')
+except TypeError as errb:
+    print(f'Deu TypeError: {errb}')
 except:
     print('Deu um erro diferente')
+"""
 
-# Exemplo 7
+
 def pega_valor(dicionario, chave):
-    # forma com erro
-    # return dicionario[chave]
-
-    # Erro tratado:
     try:
         return dicionario[chave]
     except KeyError:
         return None
-    except:
+    except TypeError:
         return None
 
 
-dic = {'nome': 'geek'}
+dic = {"nome": "Geek"}
 
-print(pega_valor(dic, 'game'))
-
-"""
-
-
+print(pega_valor(dic, 8))
 

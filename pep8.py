@@ -1,15 +1,15 @@
 """
-PEP8 - PYTHON Enhancement Proposal
+PEP8 - Python Enhancement Proposal
 
-São propostas de melhorias para a linguagem python
+São propostas de melhorias para a linguagem Python
 
 The Zen of Python
 
 import this
 
-A ideia da PEP é que possamos escrever códigos Python de forma Pythônica.
+A ideia da PEP8 é que possamos escrever códigos Python de forma Pythônica.
 
-[1] - Utilize camel case para nomes de classes;
+[1] - Utilize Camel Case para nomes de classes;
 
 class Calculadora:
     pass
@@ -24,8 +24,10 @@ class CalculadoraCientifica:
 def soma():
     pass
 
+
 def soma_dois():
     pass
+
 
 numero = 4
 
@@ -37,12 +39,12 @@ if 'a' in 'banana':
     print('tem')
 
 [4] - Linhas em branco
-- Separar funções e definições de classe com duas linhas em branco
+- Separar funções e definições de classe com duas linhas em branco;
 - Métodos dentro de uma classe devem ser separados com uma única linha em branco;
 
 [5] - Imports
 
--Imports devem ser sempre feitos em linhs separadas;
+- Imports devem ser sempre feitos em linhas separadas;
 
 # Import Errado
 
@@ -57,7 +59,7 @@ import os
 
 from types import StringType, ListType
 
-# Caso tenha muitos imports de uma mesmo pacote, recomenda-se fazer:
+# Caso tenha muitos imports de um mesmo pacote, recomenda-se fazer:
 
 from types import (
     StringType,
@@ -66,22 +68,22 @@ from types import (
     OutroType
 )
 
-#Imports devem ser colocados no topo do arquivo, logod epois de uaisuer comentários ou docstrings e
-# antes de constante ou variáveis globais.
+# Imports devem ser colocados no topo do arquivo, logo depois de quaisquer comentários ou docstrings e
+# antes de constantes ou variáveis globais.
 
 [6] - Espaços em expressões e instruções
 
-# não faça:
+# Não faça:
+
+funcao( algo[ 1 ], { outro: 2 } )
+
+# Faça:
 
 funcao(algo[1], {outro: 2})
 
-# Faça
+# Não faça:
 
-funcao(algo[1], {outro: 2})
-
-# Não fala:
-
-algo(1)
+algo (1)
 
 # Faça:
 
@@ -89,22 +91,22 @@ algo(1)
 
 # Não faça:
 
-dict['chave'] = list[indice]
+dict ['chave'] = lista [indice]
 
 # Faça:
 
-dict['chave'] = list[indice]
+dict['chave'] = lista[indice]
 
 # Não faça:
 
 x              = 1
-y              = 2
+y              = 3
 variavel_longa = 5
 
-# Faça
+# Faça:
 
 x = 1
-y = 2
+y = 3
 variavel_longa = 5
 
 [7] - Termine sempre uma instrução com uma nova linha

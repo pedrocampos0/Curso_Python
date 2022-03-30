@@ -1,2 +1,1 @@
-nome = 'geek'
-print(f'{nome}')
+print("Geek University")

@@ -3,22 +3,22 @@ Recebendo dados do usuário
 
 input() -> Todo dado recebido via input é do tipo String
 
-Em Python uma String é tudo que estiver entre:
+Em Python, string é tudo que estiver entre:
 - Aspas simples;
 - Aspas duplas;
 - Aspas simples triplas;
 - Aspas duplas triplas;
 
-Exemplos:
+Exemplos: 
 - Aspas simples -> 'Angelina Jolie'
 - Aspas duplas -> "Angelina Jolie"
 - Aspas simples triplas -> '''Angelina Jolie'''
 """
-# Aspas duplas triplas -> """Angelina Jolie"""
+# - Aspas duplas triplas -> """Angelina Jolie"""
 
-# Entrada de dados
-# print("Qual é o seu nome? ")
-# nome = input()
+#  Entrada de dados
+# print("Qual seu nome? ")
+# nome = input()  # Input -> Entrada
 
 nome = input('Qual seu nome? ')
 
@@ -31,14 +31,14 @@ nome = input('Qual seu nome? ')
 # Exemplo de print 'mais atual' 3.7
 print(f'Seja bem-vindo(a) {nome}')
 
-# print('Qual a sua idade? ')
+# print("Qual sua idade? ")
 # idade = input()
 
 idade = int(input('Qual sua idade? '))
 
 # Processamento
 
-# Saída de dados
+# Saída
 # Exemplo de print 'antigo' 2.x
 # print('A %s tem %s anos' % (nome, idade))
 
@@ -49,8 +49,8 @@ idade = int(input('Qual sua idade? '))
 print(f'A {nome} tem {idade} anos')
 
 """
-# int(idade) => cast
+# int(idade) => cast 
 
-Cast é a conversão de um tipo de dado para outro
+Cast é a 'conversão' de um tipo de dado para outro.
 """
 print(f'A {nome} nasceu em {2018 - idade}')

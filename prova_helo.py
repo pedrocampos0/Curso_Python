@@ -44,7 +44,7 @@ while True:
     print(f"{int((mg/500)*20)} gotas")
     break'''
 
-sm = 0
+"""sm = 0
 si = 0
 while True:
     m, i = input().split()
@@ -55,4 +55,10 @@ while True:
         break
 sm = int((sm/4))
 si = int((si/2))
-print(f'{int(sm+si)}')
+print(f'{int(sm+si)}')"""
+lista = []
+numero = int(input())
+
+for numero in range(1, numero+1, -1):
+    if numero % 2 == 0:
+        print(numero)

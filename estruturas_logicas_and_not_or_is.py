@@ -17,10 +17,21 @@ Para o 'is', o valor é comparado com um segundo
 ativo = True
 logado = True
 
-if ativo and logado:
+'''if ativo and logado:
     print('Você precisca ativar sua conta por favor cheque o seu e-mail')
 else:
     print('Usuário ativo e logado no sistema')
 
 # ativo é True?
-print(ativo is True)
+print(ativo is True)'''
+
+
+a1 = 8
+a2 = 5
+a3 = 10
+for i in range(1,4):
+    for j in range(2,5):
+        a3 = a3 + 2*a2 - a1
+    a1 = a1-1
+
+print(a3)
