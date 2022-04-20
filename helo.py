@@ -47,7 +47,7 @@ while contador != N:
 
 media_somas = 0
 print(f'{max(soma_impares)} \n{min(soma_impares)} \n{((max(soma_impares)+min(soma_impares))/2):.2f}')
-"""
+
 
 N = int(input())
 contador = 0
@@ -76,3 +76,6 @@ while contador != N:
     contador = contador + 1
 
 print(f'{max(soma_impares)} \n{min(soma_impares)} \n{((max(soma_impares)+min(soma_impares))/2):.2f}')
+"""
+x = int(array = {1,2,3,4,5})
+print(x[4])
